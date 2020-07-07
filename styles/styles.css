@@ -1,0 +1,33 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+}
+
+.main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 15% 1fr;
+      grid-template-columns: 15% 1fr;
+      grid-template-areas: "sidenav main-content";
+}
+
+.sidenav {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: sidenav;
+  background-color: coral;
+  height: 100vh;
+}
+
+.main-content {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: main-content;
+  background-color: lightblue;
+  height: 100vh;
+}
+/*# sourceMappingURL=styles.css.map */
