@@ -29,5 +29,34 @@ body {
   grid-area: main-content;
   background-color: lightblue;
   height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 10% 30% 1fr;
+      grid-template-rows: 10% 30% 1fr;
+      grid-template-areas: "row1" "row2" "row3";
+}
+
+.row1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: row1;
+  height: 100%;
+  background-color: red;
+}
+
+.row2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: row2;
+  height: 100%;
+  background-color: cyan;
+}
+
+.row3 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: row3;
+  height: 100%;
+  background-color: pink;
 }
 /*# sourceMappingURL=styles.css.map */
